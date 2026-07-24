@@ -36,6 +36,7 @@ body{background:#faf9f6;font-family:"DM Sans",sans-serif;padding:1rem 2rem;}
   <marker id="apiq"  markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#92400e"/></marker>
   <marker id="aalert" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#dc2626"/></marker>
   <marker id="awb"   markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#9d174d"/></marker>
+  <marker id="agate3" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#0f766e"/></marker>
 </defs>
 
 <rect x="0" y="48" width="1900" height="70" fill="#f6fef9" stroke="#e2e0d8" stroke-width="1"/>
@@ -224,6 +225,16 @@ body{background:#faf9f6;font-family:"DM Sans",sans-serif;padding:1rem 2rem;}
 <path d="M950.0,872.0 L950.0,956.0" fill="none" stroke="#1D9E75" stroke-width="1.3" marker-end="url(#asig)"/>
 <path d="M1160.0,872.0 L1160.0,956.0" fill="none" stroke="#1D9E75" stroke-width="1.3" marker-end="url(#asig)"/>
 <text x="575.0" y="879.0" text-anchor="start" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7" fill="#1D9E75">vector / semantic</text>
+<text x="745.0" y="948.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="6" fill="#1D9E75">semantic retrieval</text>
+<path d="M1050.0,840.0 L1050.0,890.0" fill="none" stroke="#1D9E75" stroke-width="1.3"/>
+<path d="M1050.0,890.0 L663.5,890.0" fill="none" stroke="#1D9E75" stroke-width="1.3"/>
+<path d="M663.5,890.0 L663.5,956.0" fill="none" stroke="#1D9E75" stroke-width="1.3" marker-end="url(#asig)"/>
+<path d="M756.5,890.0 L756.5,956.0" fill="none" stroke="#1D9E75" stroke-width="1.3" marker-end="url(#asig)"/>
+<text x="900.0" y="883.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7" fill="#1D9E75">extracted text</text>
+<path d="M1598.0,840.0 L1598.0,904.0" fill="none" stroke="#0f766e" stroke-width="1.3"/>
+<path d="M1598.0,904.0 L780.0,904.0" fill="none" stroke="#0f766e" stroke-width="1.3"/>
+<path d="M780.0,904.0 L780.0,956.0" fill="none" stroke="#0f766e" stroke-width="1.3" marker-end="url(#agate3)"/>
+<text x="1150.0" y="897.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7" fill="#0f766e">Gate 3 · locked view</text>
 <path d="M230.0,1002.0 L230.0,1018.0" fill="none" stroke="#1D9E75" stroke-width="1.3" marker-end="url(#asig)"/>
 <path d="M470.0,1002.0 L470.0,1018.0" fill="none" stroke="#1D9E75" stroke-width="1.3" marker-end="url(#asig)"/>
 <path d="M663.5,1002.0 L663.5,1018.0" fill="none" stroke="#1D9E75" stroke-width="1.3" marker-end="url(#asig)"/>
@@ -294,8 +305,8 @@ body{background:#faf9f6;font-family:"DM Sans",sans-serif;padding:1rem 2rem;}
   <line x1="1480.0" y1="188.5" x2="1760.0" y2="188.5" stroke="#1D9E75" stroke-width="0.8" stroke-dasharray="3,2"/>
   <text x="1620.0" y="183.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" font-weight="500" fill="#1D9E75">▲  Continuously monitors all Zone 1  ▲</text>
   <text x="1620.0" y="196.8" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#1a1a18">Source Freshness Monitor</text>
-  <text x="1620.0" y="206.8" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#4a4a46">Reads source registry; tracks cadence vs actual</text>
-  <text x="1620.0" y="216.8" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#4a4a46">Absence of updates is also intelligence</text>
+  <text x="1620.0" y="206.8" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#4a4a46">Tracks cadence, staleness &amp; governing conditions</text>
+  <text x="1620.0" y="216.8" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#4a4a46">Emits rights-change signal · robots/ToS/API/license</text>
 </g>
 <g>
   <rect x="140.0" y="318.0" data-node="PP1" width="280.0" height="46" rx="3" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
@@ -357,7 +368,12 @@ body{background:#faf9f6;font-family:"DM Sans",sans-serif;padding:1rem 2rem;}
   <text x="1290.0" y="595.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#e2e8f0">M04 KIT Scoring &amp; Pre-scoring</text>
   <text x="1290.0" y="605.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#94a3b8">Decompose · score against active KITs · §B and §D/§E generation</text>
   <text x="1290.0" y="615.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#94a3b8">ICD 203 uncertainty · Admiralty source scoring</text>
+  <rect x="1160.0" y="577.0" width="128" height="9" rx="2" fill="#0f172a" stroke="#475569" stroke-width="0.6"/>
+  <text x="1224.0" y="581.5" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="5.5" font-weight="600" letter-spacing=".02em" fill="#e2e8f0">2-MODEL ENSEMBLE</text>
+  <rect x="1292.0" y="577.0" width="128" height="9" rx="2" fill="#0f172a" stroke="#475569" stroke-width="0.6"/>
+  <text x="1356.0" y="581.5" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="5.5" font-weight="600" letter-spacing=".02em" fill="#e2e8f0">GROUNDING CHECK</text>
 </g>
+<text x="1290.0" y="634.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="6" font-style="italic" fill="#64748b">Disagreement or failed grounding &#8594; auto-hold (no human queue)</text>
 <g>
   <rect x="1500.0" y="582.0" data-node="M05" width="260.0" height="46" rx="3" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
   <text x="1630.0" y="595.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#e2e8f0">M05 QA + Deduplication</text>
@@ -496,30 +512,30 @@ body{background:#faf9f6;font-family:"DM Sans",sans-serif;padding:1rem 2rem;}
   <text x="1723.0" y="960.5" text-anchor="middle" dominant-baseline="middle" font-family="DM Sans,sans-serif" font-size="6.5" font-weight="700" fill="#92400e">ANALYST WORKSPACE</text>
   <text x="1670.0" y="1001.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#1a1a18">AI Implementation Monitor</text>
   <text data-subtitle="true" x="1670.0" y="1012.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#4a4a46">Pipeline health · DLQ · source freshness</text>
-  <text data-subtitle="true" x="1670.0" y="1022.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#4a4a46">Adapter health · AI output drift</text>
+  <text data-subtitle="true" x="1670.0" y="1022.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#4a4a46">Adapter health · AI drift &#8594; drift review</text>
 </g>
 <g>
-  <rect x="140.0" y="1242.0" data-node="D1" data-node-dim="true" width="220.0" height="42" rx="3" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <rect x="140.0" y="1242.0" data-node="DS1" data-node-dim="true" width="220.0" height="42" rx="3" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
   <text x="250.0" y="1258.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#1a1a18">Content Management System</text>
   <text x="250.0" y="1268.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#4a4a46">Published research · EI · RPC website</text>
 </g>
 <g>
-  <rect x="490.0" y="1242.0" data-node="D2" data-node-dim="true" width="220.0" height="42" rx="3" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <rect x="490.0" y="1242.0" data-node="DS2" data-node-dim="true" width="220.0" height="42" rx="3" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
   <text x="600.0" y="1258.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#1a1a18">Society &amp; Community Platform</text>
   <text x="600.0" y="1268.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#4a4a46">Chapter communities · engagement</text>
 </g>
 <g>
-  <rect x="840.0" y="1242.0" data-node="D3" data-node-dim="true" width="220.0" height="42" rx="3" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <rect x="840.0" y="1242.0" data-node="DS3" data-node-dim="true" width="220.0" height="42" rx="3" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
   <text x="950.0" y="1258.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#1a1a18">Email &amp; Newsletter</text>
   <text x="950.0" y="1268.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#4a4a46">Member briefings · open/click data</text>
 </g>
 <g>
-  <rect x="1190.0" y="1242.0" data-node="D4" data-node-dim="true" width="220.0" height="42" rx="3" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <rect x="1190.0" y="1242.0" data-node="DS4" data-node-dim="true" width="220.0" height="42" rx="3" fill="#f5f3ff" stroke="#4f46e5" stroke-width="1.5"/>
   <text x="1300.0" y="1258.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#1a1a18">Board &amp; Governance Portal</text>
   <text x="1300.0" y="1268.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#4a4a46">Secure doc distribution · output only</text>
 </g>
 <g>
-  <rect x="1540.0" y="1242.0" data-node="D5" data-node-dim="true" width="220.0" height="42" rx="3" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="1540.0" y="1242.0" data-node="DS5" data-node-dim="true" width="220.0" height="42" rx="3" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
   <text x="1650.0" y="1258.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="10" font-weight="700" fill="#1a1a18">External &amp; Network Recipients</text>
   <text x="1650.0" y="1268.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.8" fill="#92400e">Society leaders · practitioners · regulators</text>
 </g>
@@ -534,6 +550,12 @@ body{background:#faf9f6;font-family:"DM Sans",sans-serif;padding:1rem 2rem;}
 <text x="1355.0" y="882.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#92400e">KIT calibration alerts</text>
 <path data-feedback="P3_I7" data-fb-tier="med" d="M1758.5,183.0 L1852.0,183.0 L1852.0,1024.0 L1760.0,1024.0" fill="none" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#aalert)"/>
 <text x="1765.0" y="176.0" text-anchor="start" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#dc2626">source freshness</text>
+<path data-feedback="P3_RIGHTS" data-fb-tier="all" d="M1760.0,205.0 L1885.0,205.0" fill="none" stroke="#9d174d" stroke-width="1.3" stroke-dasharray="4,3"/>
+<path data-feedback="P3_RIGHTS" data-fb-tier="all" d="M1885.0,205.0 L1885.0,790.0" fill="none" stroke="#9d174d" stroke-width="1.3" stroke-dasharray="4,3"/>
+<path data-feedback="P3_RIGHTS" data-fb-tier="all" d="M1885.0,790.0 L302.0,790.0" fill="none" stroke="#9d174d" stroke-width="1.3" stroke-dasharray="4,3"/>
+<path data-feedback="P3_RIGHTS" data-fb-tier="all" d="M1598.0,790.0 L1598.0,798.0" fill="none" stroke="#9d174d" stroke-width="1.3" marker-end="url(#awb)" stroke-dasharray="4,3"/>
+<path data-feedback="P3_RIGHTS" data-fb-tier="all" d="M302.0,790.0 L302.0,798.0" fill="none" stroke="#9d174d" stroke-width="1.3" marker-end="url(#awb)" stroke-dasharray="4,3"/>
+<text x="950.0" y="783.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7" fill="#9d174d">rights amendment (effective-dated)</text>
 <text x="615.0" y="264.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#1D9E75">transcription</text>
 <text x="615.0" y="289.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#1D9E75">failed records</text>
 <text x="1190.0" y="406.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#64748b">source freshness</text>
@@ -554,14 +576,26 @@ body{background:#faf9f6;font-family:"DM Sans",sans-serif;padding:1rem 2rem;}
   <text x="1190.0" y="1142.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="9" font-weight="700" fill="#8a8a84">Derivative Content Pipeline</text>
   <text x="1190.0" y="1156.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7" fill="#9a9a94">one-pagers · briefings · audio · social</text>
 </g>
+<g>
+  <rect x="800.0" y="1128.0" data-node="MDR" width="180.0" height="40" rx="3" fill="#f4f4f5" stroke="#a8a8a2" stroke-width="1.3" stroke-dasharray="4,3"/>
+  <text x="890.0" y="1142.0" text-anchor="middle" dominant-baseline="middle" font-family="Libre Baskerville,serif" font-size="9" font-weight="700" fill="#8a8a84">Model-Drift Review</text>
+  <text x="890.0" y="1156.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7" fill="#9a9a94">champion/challenger vs benchmark set</text>
+</g>
 <path d="M1190.0,1168.0 L1190.0,1178.0" fill="none" stroke="#4f46e5" stroke-width="1.3"/>
+<path data-feedback="I7_MDR" data-fb-tier="end" d="M1670.0,1076.0 L1670.0,1100.0" fill="none" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="4,3"/>
+<path data-feedback="I7_MDR" data-fb-tier="end" d="M1670.0,1100.0 L890.0,1100.0" fill="none" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="4,3"/>
+<path data-feedback="I7_MDR" data-fb-tier="end" d="M890.0,1100.0 L890.0,1128.0" fill="none" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#aalert)"/>
+<text x="1280.0" y="1093.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="7" fill="#dc2626">AI output drift</text>
+<path data-feedback="RL1_MDR" data-fb-tier="end" d="M340.0,840.0 L340.0,1108.0" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2"/>
+<path data-feedback="RL1_MDR" data-fb-tier="end" d="M340.0,1108.0 L890.0,1108.0" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2" marker-end="url(#afwd)"/>
+<text x="530.0" y="1116.0" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="6" fill="#94a3b8">Model Version Registry</text>
 <rect x="0" y="1224" width="1900" height="118" fill="#f5f5f5" opacity="0.55" pointer-events="none"/>
 </svg>
 
 <div style="margin:0.6rem -2rem 0 -2rem;padding:0.5rem 2rem 0.3rem 2rem;border-top:1px solid #d4d0c8;font-family:'DM Mono',monospace;">
 <div style="display:flex;gap:1.6rem;align-items:center;flex-wrap:nowrap;margin-bottom:0.35rem;">
   <span style="font-size:.5rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#8a8a84;white-space:nowrap;">Lines</span>
-  <span style="display:flex;align-items:center;gap:4px;white-space:nowrap;"><svg width="28" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#1D9E75" stroke-width="1.5"/><polygon points="18,2 27,5 18,8" fill="#1D9E75"/></svg><span style="font-size:.5rem;color:#4a4a46;">Signal data flow</span></span>
+  <span style="display:flex;align-items:center;gap:4px;white-space:nowrap;"><svg width="28" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#1D9E75" stroke-width="1.5"/><polygon points="18,2 27,5 18,8" fill="#1D9E75"/></svg><span style="font-size:.5rem;color:#4a4a46;">Signal data flow</span></span><span style="display:flex;align-items:center;gap:4px;white-space:nowrap;"><svg width="28" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#0f766e" stroke-width="1.5"/><polygon points="18,2 27,5 18,8" fill="#0f766e"/></svg><span style="font-size:.5rem;color:#4a4a46;">Gate 3 · locked view</span></span>
   <span style="display:flex;align-items:center;gap:4px;white-space:nowrap;"><svg width="28" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#4f46e5" stroke-width="1.5"/><polygon points="18,2 27,5 18,8" fill="#4f46e5"/></svg><span style="font-size:.5rem;color:#4a4a46;">Product delivery</span></span>
   <span style="display:flex;align-items:center;gap:4px;white-space:nowrap;"><svg width="28" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,2"/><polygon points="18,2 27,5 18,8" fill="#64748b"/></svg><span style="font-size:.5rem;color:#4a4a46;">Control &amp; orchestration</span></span>
   <span style="display:flex;align-items:center;gap:4px;white-space:nowrap;"><svg width="28" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#92400e" stroke-width="1.5" stroke-dasharray="4,2"/><polygon points="18,2 27,5 18,8" fill="#92400e"/></svg><span style="font-size:.5rem;color:#4a4a46;">KIT / human-in-loop</span></span>
@@ -581,8 +615,8 @@ body{background:#faf9f6;font-family:"DM Sans",sans-serif;padding:1rem 2rem;}
 </div>
 
 <script id="diag-toggle-js">
-const nodeTiers={"SF":"all","SP":"all","SA":"all","SQ":"all","SE":"all","P1":"all","P2":"end","P3":"all","PP1":"all","PP2":"all","PP3":"all","PP4":"all","OL":"all","PP5":"all","M01":"all","M02":"all","M03":"all","M04":"all","M05":"all","KIT":"all","RL1":"all","RL2":"all","RL3":"all","RL4":"all","O1":"all","O2":"all","O3":"all","O4":"all","O5":"all","O6":"all","O-RP":"all","I1":"all","I2":"end","I3":"all","I4":"end","I5":"end","I6":"all","I7":"all","D1":"all","D2":"all","D3":"all","D4":"all","D5":"all"};
-const fbTiers={"D2D3_SE":"all","I123_RL":"all","I2_OL":"all","I6_OL":"all","PP5_I7":"all","M05_OL":"all","P3_I7":"all","KIT_RL":"all","P2_M4":"end","KIT_O7":"all"};
+const nodeTiers={"SF":"all","SP":"all","SA":"all","SQ":"all","SE":"all","P1":"all","P2":"end","P3":"all","PP1":"all","PP2":"all","PP3":"all","PP4":"all","OL":"all","PP5":"all","M01":"all","M02":"all","M03":"all","M04":"all","M05":"all","KIT":"all","RL1":"all","RL2":"all","RL3":"all","RL4":"all","O1":"all","O2":"all","O3":"all","O4":"all","O5":"all","O6":"all","O-RP":"all","I1":"all","I2":"end","I3":"all","I4":"end","I5":"end","I6":"all","I7":"all","DS1":"all","DS2":"all","DS3":"all","DS4":"all","DS5":"all","MDR":"end"};
+const fbTiers={"D2D3_SE":"all","I123_RL":"all","I2_OL":"all","I6_OL":"all","PP5_I7":"all","M05_OL":"all","P3_I7":"all","KIT_RL":"all","P2_M4":"end","KIT_O7":"all","P3_RIGHTS":"all","I7_MDR":"end","RL1_MDR":"end"};
 const diagNotes={mvp:"",med:"",end:""};
 
 function setDiagTier(tier){
